@@ -26,4 +26,26 @@ h1, h2, h3{
 display: grid;
 grid-template-rows: 1fr 1fr 1fr;
 grid-template-columns: 1fr 1fr;
+grid-template-areas: "header header"
+                     "content1 content2"
+                     "footer footer
+}
+
+.item1 {
+grid-area: header;
+margin: 20px;
+}
+
+.item2 {
+grid-area: content1;
+}
+
+.item3 {
+grid-area: content2;
+margin: 200px;
+}
+
+.item4 {
+grid-area: footer;
+margin: 200px;
 }
