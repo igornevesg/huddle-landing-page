@@ -51,7 +51,7 @@ color: white;
 
 .social{
     position: absolute;
-    bottom: -20px;
+    bottom: 60px;
     right: 10%;
     text-align: right;
 }
@@ -68,6 +68,15 @@ color: white;
     border: 2px solid violet;
 }
 
+.attribution {
+font-size: 14px;
+}
+
+.mockup {
+padding: 20px;
+}
+
+
 .container {
 display: grid;
 grid-template-rows: 0px 200px 300px;
@@ -78,7 +87,6 @@ grid-template-areas: "header header"
 }
 
 .item2 {
-padding: 20px;
 grid-area: content1;
 }
 
@@ -88,8 +96,58 @@ grid-area: content2;
 }
 
 .item4 {
-padding: 20px;
 grid-area: footer;
 }
 
-@media
+@media screen and (max-width: 1200px){
+
+.container{
+width: 90%;
+height: 60%;
+} 
+
+.social{
+position: relative;
+left: 20px;
+bottom: 50px;
+text-align: left;   
+}
+
+.social img{
+width: 4%;
+}
+
+.attribution {
+visibility: hidden;
+}
+
+h1{
+font-size: 1.6rem;
+}
+    
+p{
+font-size: 0.9rem;
+margin: 1rem 0;
+}
+}
+
+@media screen and (max-width: 860px){
+body {
+background-image: url(./images/bg-mobile.svg);
+}
+
+.container {
+display: flex;
+flex-direction: column;
+flex-flow: column-nowrap;
+align-items: center;
+justify-content: center;
+margin: 0px;
+}
+
+.mockup {
+padding: 0px;
+}
+}
+
+
