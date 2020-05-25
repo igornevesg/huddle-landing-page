@@ -10,42 +10,49 @@ background-size: cover;
 position: relative;
 }
 
+
 .button {
+width: 150px;
+height: 40px;
 background-color: white;
 background-position: center;
-background
-border-radius: 50%;
+border-radius: 30px 30px;
 cursor: pointer;
+margin-top: 15px;
+font-family: 'Poppins, sans-serif;
+text-decoration: none;
 }
 
-h1, h2, h3{
-    font-family: 'Poppins', sans-serif;
+h1{
+font-family: 'Poppins', sans-serif;
+color: white;
+}
+
+p {
+font-family: 'Poppins', sans-serif;
+color: white;
 }
 
 .container {
 display: grid;
-grid-template-rows: 1fr 1fr 1fr;
+grid-template-rows: 30px 200px 300px;
 grid-template-columns: 1fr 1fr;
 grid-template-areas: "header header"
                      "content1 content2"
-                     "footer footer
-}
-
-.item1 {
-grid-area: header;
-margin: 20px;
+                     "footer footer"
 }
 
 .item2 {
+padding: 20px;
 grid-area: content1;
 }
 
 .item3 {
+padding: 20px;
 grid-area: content2;
-margin: 200px;
 }
 
 .item4 {
+padding: 20px;
 grid-area: footer;
-margin: 200px;
 }
