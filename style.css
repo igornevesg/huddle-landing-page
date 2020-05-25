@@ -21,3 +21,9 @@ cursor: pointer;
 h1, h2, h3{
     font-family: 'Poppins', sans-serif;
 }
+
+.container {
+display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+}
